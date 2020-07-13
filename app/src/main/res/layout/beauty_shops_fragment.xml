@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.BeautyShopsFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Популярные фирмы"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/popularFirmsLayout"
+        android:textColor="#000"
+        android:layout_margin="6dp"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewShopsPop"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рекомендованные фирмы"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_margin="6dp"
+        android:visibility="gone"
+        android:id="@+id/recomendedFirmsLayout"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/recyclerViewShopsRec"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Недавно добавленные фирмы"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_margin="6dp"
+        android:id="@+id/recentlyAddedLayout"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewShopsRecentlyAdded"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
